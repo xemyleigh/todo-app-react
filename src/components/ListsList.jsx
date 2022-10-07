@@ -8,8 +8,8 @@ const ListsList = () => {
     console.log(lists)
 
     return (
-        <div className='col-3 px-2'>
-            <div className='bg-transparent bg-gradient rounded p-4 mt-3'>
+        <div className='col-lg-3 col-md-12 px-4 px-md-2 mb-3'>
+            <div className='bg-transparent bg-gradient rounded p-4'>
                 <div className="row">
                     <div className="col">
                         <ul className="list-group">

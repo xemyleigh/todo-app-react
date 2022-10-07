@@ -24,7 +24,7 @@ const TasksForm = () => {
                 <div className="row">
                     <div className="col">
                         <div className="form-group">
-                            <input type="" onChange={onChange} value={value} className="form-control p-2" id="input" aria-describedby="emailHelp" placeholder="Type your task here" />
+                            <input type="" required onChange={onChange} value={value} className="form-control p-2" id="input" aria-describedby="emailHelp" placeholder="Type your task here" />
                         </div>
                     </div>
                     <div className="col-auto">
