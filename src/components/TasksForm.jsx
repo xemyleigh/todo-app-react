@@ -4,16 +4,25 @@ import { actions as tasksActions} from "../slices/tasksSlice";
 import uniqueId from 'lodash/uniqueId'
 
 const TasksForm = () => {
-    const [value, setValue] = useState('')
+    const [data, setValue] = useState({
+        task: '',
+        description: ''
+    })
 
-    const onChange = (e) => setValue(e.target.value)
+    const taskHandler = (e) => setValue({...data, task: e.target.value})
+    const descriptionHandler = (e) => setValue({...data, description: e.target.value})
     const dispatch = useDispatch()
     const activeList = useSelector(state => state.activeList.value)
-
+    console.log(data)
     const submitHandler = (e) => {
+        console.log(data)
         e.preventDefault()
-        dispatch(tasksActions.addTask({ name: value, id: uniqueId(), completed: false, list: activeList}))
-        setValue('')
+        dispatch(tasksActions.addTask({ name: data.task, description: data.description, id: uniqueId(), completed: false, list: activeList}))
+        setValue({
+            task: '',
+            description: ''
+        })
+        console.log(data)
 
     }
 
@@ -24,7 +33,11 @@ const TasksForm = () => {
                 <div className="row">
                     <div className="col">
                         <div className="form-group">
-                            <input type="" required onChange={onChange} value={value} className="form-control p-2" id="input" aria-describedby="emailHelp" placeholder="Type your task here" />
+                            {/* <label htmlFor="task" className="invisible">Task</label> */}
+                            <input type="" id='task' required onChange={taskHandler} value={data.task} className="form-control p-2 mb-2"  aria-describedby="emailHelp" placeholder="Type your task here" />
+                            {/* <label htmlFor="taskDescription" className="invisible">Task</label> */}
+                            <input type="" id='taskDescription'  onChange={descriptionHandler} value={data.description} className="form-control p-2" aria-describedby="emailHelp" placeholder="Task description" />
+
                         </div>
                     </div>
                     <div className="col-auto">
