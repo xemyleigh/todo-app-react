@@ -12,9 +12,6 @@ const ListItem = ({list}) => {
     //     dispatch(tasksActions.toggleComplete({ list }))
     // }
 
-    const deleteTaskHandler = (id) => () => {
-    }
-
 
     const listHandler = (name) => () => {
         dispatch(activeListActions.updateActiveList(name))

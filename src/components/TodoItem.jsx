@@ -1,4 +1,3 @@
-import { compose } from "@reduxjs/toolkit";
 import React from "react";
 import { useDispatch } from 'react-redux';
 import { actions as tasksActions} from "../slices/tasksSlice";
