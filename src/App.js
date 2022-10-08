@@ -15,18 +15,18 @@ function App() {
     console.log(tasks)
 
   return (
-    <div className="container text-white mt-5">
+    <div className="container text-dark mt-5">
         <Header />
         <div className="row">
             <div className="col-lg-5 col-md-12 px-4 px-md-2 mb-3">
-                <div className='bg-info bg-gradient rounded p-4'>
-                    <h1>Lists</h1>
+                <div className='bg-light shadow bg-gradient rounded p-4'>
+                    <h1><b>Lists</b></h1>
                     <ListsForm />
                 </div>
             </div>
             <div className="col-lg-7 col-md-12 px-4 px-md-2 mb-3">
-                <div className='bg-info bg-gradient rounded p-4'>
-                    <h1>Tasks</h1>
+                <div className='bg-info shadow bg-gradient rounded p-4'>
+                    <h1><b>Tasks</b></h1>
                     <TasksForm />
                 </div>
             </div>  

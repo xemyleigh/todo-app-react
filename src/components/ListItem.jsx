@@ -28,7 +28,7 @@ const ListItem = ({list}) => {
         // <li className='list-group-item d-flex justify-content-between align-items-center'>
         //     {list.listName}
         //     <div className="d-flex gap-3">
-                <button className={classes} onClick={listHandler(list.listName)}>{list.listName}</button>
+                <button className={classes} onClick={listHandler(list.listName)}><b>{list.listName}</b></button>
                 // <button className="btn btn-danger" onClick={deleteTaskHandler(list.id)}>Delete</button>
 
         //     </div>

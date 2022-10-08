@@ -11,7 +11,7 @@ const TodoList = () => {
     if (filteredTasks.length > 0) {
         return (
             <div className='col-lg-9 col-md-12 px-4 px-md-2'>
-                <div className='bg-transparent bg-gradient rounded p-4'>
+                <div className='bg-light shadow bg-gradient rounded p-4'>
                     <div className="row">
                         <div className="col">
                             <ul className="list-group">

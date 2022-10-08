@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit"
 const activeListSlice = createSlice({
     name: 'activeList',
     initialState: {
-        value: 'General'
+        value: 'All tasks'
     },
     reducers: {
         updateActiveList(state, { payload: name }) {
