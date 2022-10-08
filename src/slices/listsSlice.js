@@ -1,7 +1,7 @@
 import { createEntityAdapter, createSlice } from "@reduxjs/toolkit"
 
 const listsAdapter = createEntityAdapter()
-const initialState = listsAdapter.getInitialState({entities: {0: {id: 0, listName: 'General'}}, ids: [0]})
+const initialState = listsAdapter.getInitialState({entities: {0: {id: 0, listName: 'All tasks'}}, ids: [0]})
 
 const listsSlice = createSlice({
     name: 'lists',

@@ -24,7 +24,7 @@ const TodoItem = ({task}) => {
                 </div>
                 <div className="row flex-wrap">
                     <p className="text-break m-0">{task.name}</p>
-                    {(task.description !== '') ? <small className="text-muted mt-3">{task.description}</small> : null}
+                    {(task.description !== '') ? <small className="text-muted mt-1">{task.description}</small> : null}
                 </div>
             </div>
             <button className="btn btn-danger d-block" onClick={deleteTaskHandler(task.id)}>Delete</button>

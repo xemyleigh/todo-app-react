@@ -36,7 +36,7 @@ const TasksForm = () => {
                             {/* <label htmlFor="task" className="invisible">Task</label> */}
                             <input type="" id='task' required onChange={taskHandler} value={data.task} className="form-control p-2 mb-2"  aria-describedby="emailHelp" placeholder="Type your task here" />
                             {/* <label htmlFor="taskDescription" className="invisible">Task</label> */}
-                            <input type="" id='taskDescription'  onChange={descriptionHandler} value={data.description} className="form-control p-2" aria-describedby="emailHelp" placeholder="Task description" />
+                            <input type="" id='taskDescription' onChange={descriptionHandler} value={data.description} className="form-control p-2" aria-describedby="emailHelp" placeholder="Task description" />
 
                         </div>
                     </div>
