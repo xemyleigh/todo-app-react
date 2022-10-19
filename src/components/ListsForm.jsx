@@ -22,22 +22,23 @@ const TasksForm = () => {
     }
 
     return (
-        <div className="row">
-        <div className="col">
-            <form className="my-3 form-inline" onSubmit={submitHandler}>
-                <div className="row">
-                    <div className="col">
-                        <div className="form-group">
-                            <input type="" ref={input} onChange={onChange} value={value} className="form-control p-2" id="input" required placeholder="Type your list here" />
+            <div className="col-lg-5 col-md-12 px-4 px-md-2 mb-3">
+                <div className='bg-light shadow bg-gradient rounded p-4 h-100'>
+                    <h1><b>Lists</b></h1>
+                    <form className="my-3 form-inline" onSubmit={submitHandler}>
+                        <div className="row">
+                            <div className="col">
+                                <div className="form-group">
+                                    <input type="" ref={input} onChange={onChange} value={value} className="form-control p-2" id="input" required placeholder="Type your list here" />
+                                </div>
+                            </div>
+                            <div className="col-auto">
+                                <button type="submit" className="btn btn-primary h-100">Add list</button>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-auto">
-                        <button type="submit" className="btn btn-primary h-100">Add list</button>
-                    </div>
-                </div>
-            </form>   
-        </div>
-    </div>
+                    </form>   
+         </div>
+     </div>
 
     )
 }

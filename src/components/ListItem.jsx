@@ -20,7 +20,7 @@ const ListItem = ({list}) => {
 
     const activeList = useSelector(state => state.activeList.value)
 
-    const classes = cn('btn mb-2', {
+    const classes = cn('btn mb-2 text-truncate', {
         'btn-outline-info': (list.listName !== activeList),
         'btn-info': (list.listName === activeList)
     })

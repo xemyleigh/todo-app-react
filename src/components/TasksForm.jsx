@@ -27,23 +27,24 @@ const TasksForm = () => {
     }
 
     return (
-        <div className="row">
-        <div className="col">
-            <form className="my-3 form-inline" onSubmit={submitHandler}>
-                <div className="row">
-                    <div className="col">
-                        <div className="form-group">
-                            {/* <label htmlFor="task" className="invisible">Task</label> */}
-                            <input type="" id='task' required onChange={taskHandler} value={data.task} className="form-control p-2 mb-2"  aria-describedby="emailHelp" placeholder="Type your task here" />
-                            {/* <label htmlFor="taskDescription" className="invisible">Task</label> */}
-                            <input type="" id='taskDescription' onChange={descriptionHandler} value={data.description} className="form-control p-2" aria-describedby="emailHelp" placeholder="Task description" />
+        <div className="col-lg-7 col-md-12 px-4 px-md-2 mb-3">
+            <div className='bg-info shadow bg-gradient rounded p-4'>
+                <h1><b>Tasks</b></h1>
+                <form className="my-3 form-inline" onSubmit={submitHandler}>
+                    <div className="row">
+                        <div className="col">
+                            <div className="form-group">
+                                {/* <label htmlFor="task" className="invisible">Task</label> */}
+                                <input type="" id='task' required onChange={taskHandler} value={data.task} className="form-control p-2 mb-2"  aria-describedby="emailHelp" placeholder="Type your task here" />
+                                {/* <label htmlFor="taskDescription" className="invisible">Task</label> */}
+                                <input type="" id='taskDescription' onChange={descriptionHandler} value={data.description} className="form-control p-2" aria-describedby="emailHelp" placeholder="Task description" />
 
+                            </div>
+                        </div>
+                        <div className="col-auto">
+                            <button type="submit" className="btn btn-primary h-100">Add task</button>
                         </div>
                     </div>
-                    <div className="col-auto">
-                        <button type="submit" className="btn btn-primary h-100">Add task</button>
-                    </div>
-                </div>
             </form>   
         </div>
     </div>

@@ -4,7 +4,7 @@ import { actions as tasksActions} from "../slices/tasksSlice";
 
 
 
-const TodoItem = ({task}) => {
+const TaskItem = ({task}) => {
     const dispatch = useDispatch()
 
     const checkboxHandler = (e) => {
@@ -33,4 +33,4 @@ const TodoItem = ({task}) => {
     )
 }
 
-export default TodoItem
+export default TaskItem

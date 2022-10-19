@@ -1,6 +1,4 @@
-import React from "react";
-
-const Header = () => {
+const Heading = () => {
     return (
         <div className="row">
             <div className="col px-4 px-md-2 mb-3">
@@ -9,7 +7,8 @@ const Header = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
-export default Header
+export default Heading

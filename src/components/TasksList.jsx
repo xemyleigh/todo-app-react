@@ -1,9 +1,9 @@
 import React from "react";
-import TodoItem from './TodoItem'
+import TaskItem from './TaskItem'
 import { useSelector } from 'react-redux';
 
 
-const TodoList = () => {
+const TasksList = () => {
     const tasks = useSelector(state => Object.values(state.tasks.entities))
     const activeList = useSelector(state => state.activeList.value)
     const filteredTasks = (activeList === 'All tasks') ? tasks : tasks.filter(task => task.list === activeList)
@@ -15,7 +15,7 @@ const TodoList = () => {
                     <div className="row">
                         <div className="col">
                             <ul className="list-group">
-                                {filteredTasks.map(task => <TodoItem task={task} key={task.id} />)}
+                                {filteredTasks.map(task => <TaskItem task={task} key={task.id} />)}
                             </ul>                    
                         </div>
                     </div>
@@ -26,4 +26,4 @@ const TodoList = () => {
     
 }
 
-export default TodoList
+export default TasksList
