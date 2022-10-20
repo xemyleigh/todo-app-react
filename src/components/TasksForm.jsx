@@ -34,10 +34,15 @@ const TasksForm = () => {
                     <div className="row">
                         <div className="col">
                             <div className="form-group">
-                                {/* <label htmlFor="task" className="invisible">Task</label> */}
-                                <input type="" id='task' required onChange={taskHandler} value={data.task} className="form-control p-2 mb-2"  aria-describedby="emailHelp" placeholder="Type your task here" />
-                                {/* <label htmlFor="taskDescription" className="invisible">Task</label> */}
-                                <input type="" id='taskDescription' onChange={descriptionHandler} value={data.description} className="form-control p-2" aria-describedby="emailHelp" placeholder="Task description" />
+                                <div class="form-floating mb-3">
+                                    <input type="" id='task' required onChange={taskHandler} value={data.task} className="form-control mb-2"  aria-describedby="emailHelp" placeholder="Type your task here" />
+                                    <label for="floatingInput">Task</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="" id='taskDescription' onChange={descriptionHandler} value={data.description} className="form-control" aria-describedby="emailHelp" placeholder="Task description" />
+                                    <label for="floatingInput">Task description</label>
+                                </div>
+
 
                             </div>
                         </div>

@@ -29,7 +29,11 @@ const TasksForm = () => {
                         <div className="row">
                             <div className="col">
                                 <div className="form-group">
-                                    <input type="" ref={input} onChange={onChange} value={value} className="form-control p-2" id="input" required placeholder="Type your list here" />
+                                <div class="form-floating">
+                                    <input type="" ref={input} onChange={onChange} value={value} className="form-control" id="input" required placeholder="Type your list here" />
+                                    <label for="floatingInput">List</label>
+                                </div>
+
                                 </div>
                             </div>
                             <div className="col-auto">
